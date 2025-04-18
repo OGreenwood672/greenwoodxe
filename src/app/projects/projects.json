@@ -1,0 +1,137 @@
+{
+  "algorithms-website": {
+    "name": "Algorithms Website",
+    "technologies": ["JavaScript", "HTML5", "CSS3", "p5.js"],
+    "tags": ["algorithms"],
+    "description": "Interactive website showcasing various algorithms and their implementations",
+    "image": "/projects/algorithms.png",
+    "link": "https://ogreenwood672.github.io/algorithms/#/"
+  },
+  "musical-marvin": {
+    "name": "Musical Marvin",
+    "technologies": [
+      "Java",
+      "Python",
+      "React Native",
+      "Android Studio",
+      "Node.js",
+      "Discord"
+    ],
+    "tags": ["server", "sql"],
+    "description": "Music management application with database integration",
+    "image": "/projects/musical-marvin.png",
+    "link": ""
+  },
+  "natural-selection": {
+    "name": "Natural Selection Simulator",
+    "technologies": ["TypeScript", "p5.js"],
+    "tags": ["simulator"],
+    "description": "Simulation of natural selection and evolution processes",
+    "image": "/projects/natural-selection.png",
+    "link": ""
+  },
+  "snake-ai": {
+    "name": "Snake + AI",
+    "technologies": ["Python", "Pygame", "Genetic Algorithm"],
+    "tags": ["game", "ai", "pathfinding"],
+    "description": "Classic snake game with AI pathfinding algorithms",
+    "image": "/projects/snake.png",
+    "link": ""
+  },
+  "agario": {
+    "name": "AgarIO",
+    "technologies": ["Python", "Sockets", "Pygame"],
+    "tags": ["game", "concurrency", "server"],
+    "description": "Multiplayer implementation of the Agar.io game",
+    "image": "/projects/agario.png",
+    "link": ""
+  },
+  "sudoku-solver": {
+    "name": "Sudoku Solver",
+    "technologies": ["Python", "Pygame"],
+    "tags": ["algorithms", "recursion"],
+    "description": "Recursive algorithm for solving Sudoku puzzles",
+    "image": "/projects/sudoku.png",
+    "link": ""
+  },
+  "conways": {
+    "name": "Conways Game Of Life",
+    "technologies": ["Golang", "SDL2"],
+    "tags": ["simulator"],
+    "description": "Implementation of Conway's Game of Life cellular automaton",
+    "image": "/projects/conways.png",
+    "link": ""
+  },
+  "twitter": {
+    "name": "Twitter Visualization",
+    "technologies": ["Python", "JavaScript", "Three.js", "D3.js"],
+    "tags": ["data science"],
+    "description": "Twitter data analysis and visualization tool",
+    "image": "/projects/twitter.png",
+    "link": ""
+  },
+  "terrain-generation": {
+    "name": "Procedural 3D Terrain Gen",
+    "technologies": ["Java", "Processing"],
+    "tags": ["3d"],
+    "description": "3D terrain generator using Perlin noise algorithms",
+    "image": "/projects/terrain.png",
+    "link": ""
+  },
+  "lyric-game": {
+    "name": "Lyric Game",
+    "technologies": ["JavaScript", "React", "SCSS"],
+    "tags": ["game", "data science"],
+    "description": "Interactive game based on song lyrics and music data",
+    "image": "/projects/lyric-game.png",
+    "link": ""
+  },
+  "minecraft": {
+    "name": "Minecraft",
+    "technologies": ["C#", "Unity"],
+    "tags": ["game", "3d"],
+    "description": "Minecraft-like voxel game implementation",
+    "image": "/projects/minecraft.png",
+    "link": ""
+  },
+  "disease-sim": {
+    "name": "Disease Simulation",
+    "technologies": ["C#", "Unity"],
+    "tags": ["simulator", "pathfinding"],
+    "description": "Navigation and pathfinding simulation project",
+    "image": "/projects/disease-sim.png",
+    "link": ""
+  },
+  "bartender": {
+    "name": "The Bartender",
+    "technologies": ["Flutter", "PostgreSQL"],
+    "tags": ["sql"],
+    "description": "Drink recipe and inventory management application",
+    "image": "/projects/the_bartender.png",
+    "link": ""
+  },
+  "raytracer": {
+    "name": "OCAML Raytracer",
+    "technologies": ["OCAML"],
+    "tags": ["simulator", "algorithms"],
+    "description": "Simulation system implemented in OCAML",
+    "image": "/projects/raytracer.png",
+    "link": ""
+  },
+  "trophora": {
+    "name": "Trophora",
+    "technologies": [
+      "JavaScript",
+      "HTML5",
+      "CSS3",
+      "Next.js",
+      "Tailwind CSS",
+      "Supabase",
+      "Open AI"
+    ],
+    "tags": ["ai"],
+    "description": "",
+    "image": "/projects/trophora.png",
+    "link": "trophora.com"
+  }
+}
