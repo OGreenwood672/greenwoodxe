@@ -45,8 +45,11 @@ import {
   NavigationMenuList,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
+import { useRouter } from "next/navigation";
 
 export function NavBar() {
+  const router = useRouter();
+
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-14 items-center">
@@ -65,7 +68,7 @@ export function NavBar() {
                 asChild
                 className={navigationMenuTriggerStyle()}
               >
-                <Link href="/about">About</Link>
+                <Link href="/resume">Resumé</Link>
               </NavigationMenuLink>
             </NavigationMenuItem>
             <NavigationMenuItem>
@@ -81,8 +84,12 @@ export function NavBar() {
 
         <div className="ml-auto flex items-center space-x-4">
           <ModeToggle />
-          <Button variant="outline">
-            <Link href="/contact">Contact</Link>
+          <Button
+            variant="outline"
+            onClick={() => router.push("/contact")}
+            className="cursor-pointer"
+          >
+            <a>Contact</a>
           </Button>
         </div>
       </div>

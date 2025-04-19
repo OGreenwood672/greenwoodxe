@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import * as d3 from "d3";
 import projects from "./projects.json";
+import { useTheme } from "next-themes";
 
 // Define types for the graph data
 interface Node extends d3.SimulationNodeDatum {
@@ -63,6 +64,8 @@ const graphData = {
 
 export default function ProjectsPage() {
   const containerRef = useRef<HTMLDivElement>(null);
+
+  const theme = useTheme().resolvedTheme === "dark" ? "#ffffff" : "#000000";
 
   useEffect(() => {
     const svg = d3
@@ -129,8 +132,9 @@ export default function ProjectsPage() {
     nodes
       .append("text")
       .text((d: Node) => d.name)
-      .attr("dy", 30)
-      .style("text-anchor", "middle");
+      .attr("dy", 40)
+      .style("text-anchor", "middle")
+      .style("fill", theme);
 
     simulation.on("tick", () => {
       links
@@ -156,15 +160,15 @@ export default function ProjectsPage() {
       window.removeEventListener("resize", resize);
       svg.remove();
     };
-  }, []);
+  }, [theme]);
 
   return (
     <div
+      className="overflow-hidden fixed inset-0 z-10"
       ref={containerRef}
       style={{
         width: "100%",
         height: "100vh",
-        position: "relative",
       }}
     />
   );

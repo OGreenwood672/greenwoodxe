@@ -2,7 +2,7 @@ const logosMap: Record<string, string> = {
   React: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
   "Next.js": "https://cdn.worldvectorlogo.com/logos/nextjs-13.svg",
   "Node.js":
-    "https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo_2015.svg",
+    "https://cdn.iconscout.com/icon/free/png-256/free-node-js-logo-icon-download-in-svg-png-gif-file-formats--nodejs-programming-language-pack-logos-icons-1174925.png?f=webp&w=256",
   "Tailwind CSS":
     "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
   TypeScript: "https://img.icons8.com/m_rounded/512/typescript.png",
@@ -22,8 +22,7 @@ const logosMap: Record<string, string> = {
   Git: "https://upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg",
   GitHub:
     "https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg",
-  Discord:
-    "https://upload.wikimedia.org/wikipedia/commons/5/58/Discord_logo.svg",
+  Discord: "https://pngimg.com/d/discord_PNG31.png",
   "Three.js":
     "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Three.js_Icon.svg/1200px-Three.js_Icon.svg.png",
   Sockets:
@@ -51,12 +50,16 @@ const logosMap: Record<string, string> = {
     "https://upload.wikimedia.org/wikipedia/commons/c/cb/Processing_2021_logo.svg",
   Flutter:
     "https://cdn.iconscout.com/icon/free/png-256/free-flutter-logo-icon-download-in-svg-png-gif-file-formats--programming-language-coding-development-logos-icons-1720090.png?f=webp",
+  "React Native":
+    "https://static-00.iconduck.com/assets.00/sdk-react-native-icon-512x490-ynyk8t4w.png",
+  "Android Studio":
+    "https://static-00.iconduck.com/assets.00/androidstudio-icon-512x512-yro97nkk.png",
 };
 
 const AnimatedLogoCloud = ({ logos }: { logos: string[] }) => {
   console.log(logos);
   return (
-    <div className="w-full py-12">
+    <div className="w-full py-2">
       <div className="mx-auto w-full px-4 md:px-8">
         <div
           className="group relative mt-6 flex gap-6 overflow-hidden p-2"

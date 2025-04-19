@@ -3,6 +3,7 @@
 import AnimatedLogoCloud from "@/components/ui/AnimatedLogoCloud";
 import projects from "../projects.json";
 import { use } from "react";
+import { SquareChevronRight } from "lucide-react";
 
 type ProjectKey = keyof typeof projects;
 
@@ -43,27 +44,26 @@ export default function ProjectPage({
         )}
       </div>
 
-      {project_details.description && (
-        <p className="text-lg text-gray-700 leading-relaxed">
-          {project_details.description}
-        </p>
-      )}
-
-      <div className="pt-4">
-        <h2 className="text-xl font-semibold mb-4">Technologies Used:</h2>
-        <AnimatedLogoCloud logos={project_details.technologies} />
+      <div className="text-lg text-gray-700 leading-relaxed">
+        {project_details.description}
+        {project_details.link && (
+          <div className="w-full flex justify-end mt-2">
+            <a
+              href={project_details.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2"
+            >
+              <SquareChevronRight size={40} />
+            </a>
+          </div>
+        )}
       </div>
 
-      {project_details.link && (
-        <a
-          href={project_details.link}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors"
-        >
-          View Project
-        </a>
-      )}
+      <div className="pt-4">
+        <h2 className="text-xl font-semibold mb-1">Technologies Used:</h2>
+        <AnimatedLogoCloud logos={project_details.technologies} />
+      </div>
     </div>
   );
 }
