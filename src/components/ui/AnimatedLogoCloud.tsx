@@ -9,7 +9,8 @@ const logosMap: Record<string, string> = {
   JavaScript: "https://img.icons8.com/ios7/512/javascript.png",
   Python:
     "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg",
-  Django: "https://upload.wikimedia.org/wikipedia/commons/0/0c/Django_logo.svg",
+  Django:
+    "https://static-00.iconduck.com/assets.00/django-icon-200x256-8ixqzj07.png",
   Flask: "https://upload.wikimedia.org/wikipedia/commons/1/19/Flask_logo.svg",
   PostgreSQL: "https://www.svgrepo.com/show/473760/postgresql.svg",
   MongoDB:
@@ -54,10 +55,10 @@ const logosMap: Record<string, string> = {
     "https://static-00.iconduck.com/assets.00/sdk-react-native-icon-512x490-ynyk8t4w.png",
   "Android Studio":
     "https://static-00.iconduck.com/assets.00/androidstudio-icon-512x512-yro97nkk.png",
+  "C++": "https://cdn-icons-png.flaticon.com/512/74/74897.png",
 };
 
 const AnimatedLogoCloud = ({ logos }: { logos: string[] }) => {
-  console.log(logos);
   return (
     <div className="w-full py-2">
       <div className="mx-auto w-full px-4 md:px-8">

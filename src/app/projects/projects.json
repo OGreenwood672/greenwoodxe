@@ -1,9 +1,10 @@
 {
-  "algorithms-website": {
-    "name": "Algorithms Website",
+  "algorithms-showcase": {
+    "name": "Algorithms Showcase",
     "technologies": ["JavaScript", "HTML5", "CSS3", "p5.js"],
-    "tags": ["algorithms"],
-    "description": "Interactive website showcasing various algorithms and their implementations",
+    "concepts": ["algorithms", "website"],
+    "date": "June 2021",
+    "description": "Interactive website showcasing various algorithms and their implementations. These algorithsm include pathfinding algorithms, sorting algorithms, and more.",
     "image": "/projects/algorithms.png",
     "link": "https://ogreenwood672.github.io/algorithms/#/"
   },
@@ -17,63 +18,71 @@
       "Node.js",
       "Discord"
     ],
-    "tags": ["server", "sql"],
-    "description": "Music management application with database integration",
+    "concepts": ["server", "sql"],
+    "date": "December 2022",
+    "description": "A musical discord bot that allows users to play music in voice channels. I also made a mobile app that allows users to control the bot from their phones. Initially, the app was made with Java in Android Studio but I recently rewrote it in React Native.",
     "image": "/projects/musical-marvin.png",
     "link": ""
   },
   "natural-selection": {
     "name": "Natural Selection Simulator",
     "technologies": ["TypeScript", "p5.js"],
-    "tags": ["simulator"],
-    "description": "Simulation of natural selection and evolution processes",
+    "concepts": ["simulator"],
+    "date": "June 2021",
+    "description": "Inspired by Primer, I built a 2D natural selection simulator. The simulation served to demonstrate the principles of natural selection and evolution. It involved little blobs collecting food and reproducing. The simulation was built using TypeScript and p5.js.",
     "image": "/projects/natural-selection.png",
     "link": ""
   },
   "snake-ai": {
     "name": "Snake + AI",
     "technologies": ["Python", "Pygame", "Genetic Algorithm"],
-    "tags": ["game", "ai", "pathfinding"],
-    "description": "Classic snake game with AI pathfinding algorithms",
+    "concepts": ["game", "ai", "pathfinding"],
+    "date": "July 2021",
+    "description": "Initially I built a snake game in Python using Pygame. I then added a genetic algorithm to allow the snake to learn how to play the game. The snake learns by playing the game multiple times and evolving its strategy. I used the Python library NEAT-Python to implement the genetic algorithm.",
     "image": "/projects/snake.png",
     "link": ""
   },
   "agario": {
     "name": "AgarIO",
     "technologies": ["Python", "Sockets", "Pygame"],
-    "tags": ["game", "concurrency", "server"],
-    "description": "Multiplayer implementation of the Agar.io game",
+    "concepts": ["game", "concurrency", "server"],
+    "date": "June 2020",
+    "description": "AgarIO is a multiplayer game where players control a cell and try to eat other players to grow larger. I built a server using Python and sockets to handle multiple players. The game was built using Pygame for the graphics and user interface. The server handles the game logic and communication between players.",
     "image": "/projects/agario.png",
     "link": ""
   },
   "sudoku-solver": {
     "name": "Sudoku Solver",
     "technologies": ["Python", "Pygame"],
-    "tags": ["algorithms", "recursion"],
-    "description": "Recursive algorithm for solving Sudoku puzzles",
+    "concepts": ["algorithms", "recursion"],
+    "date": "April 2020",
+    "description": "A Sudoku solver that uses backtracking and recursion to solve Sudoku puzzles. The program allows users to input a Sudoku puzzle and then solves it using the backtracking algorithm. The program is built using Python and Pygame for the graphics and user interface.",
     "image": "/projects/sudoku.png",
     "link": ""
   },
   "conways": {
     "name": "Conways Game Of Life",
     "technologies": ["Golang", "SDL2"],
-    "tags": ["simulator"],
-    "description": "Implementation of Conway's Game of Life cellular automaton",
+    "concepts": ["simulator"],
+    "date": "July 2020",
+    "description": "A simulation of Conway's Game of Life, a cellular automaton devised by the British mathematician John Horton Conway in 1970. The simulation is built using Golang and SDL2 for the graphics and user interface. The program allows users to input a grid and then simulates the game using the rules of Conway's Game of Life.",
     "image": "/projects/conways.png",
     "link": ""
   },
   "twitter": {
     "name": "Twitter Visualization",
     "technologies": ["Python", "JavaScript", "Three.js", "D3.js"],
-    "tags": ["data science"],
-    "description": "Twitter data analysis and visualization tool",
+    "concepts": ["data science", "API Management"],
+    "date": "June 2021",
+    "description": "This was a tool that allowed users to visualise the accounts they followed on Twitter. It used the Twitter API to get the data and then visualised it using Three.js and D3.js. The project was built using Python for the backend and JavaScript for the frontend. Due to Twitter API changes, the project is no longer functional I imagine. Before the API changed, I scraped the twitter verified accounts and was able to create a visualisation of the communities on Twitter. See here",
     "image": "/projects/twitter.png",
-    "link": ""
+    "link": "https://ogreenwood672.github.io/algorithms/#/twitter/verified/2d"
   },
   "terrain-generation": {
     "name": "Procedural 3D Terrain Gen",
     "technologies": ["Java", "Processing"],
-    "tags": ["3d"],
+    "concepts": ["3d"],
+    "date": "April 2021",
     "description": "3D terrain generator using Perlin noise algorithms",
     "image": "/projects/terrain.png",
     "link": ""
@@ -81,40 +90,45 @@
   "lyric-game": {
     "name": "Lyric Game",
     "technologies": ["JavaScript", "React", "SCSS"],
-    "tags": ["game", "data science"],
-    "description": "Interactive game based on song lyrics and music data",
+    "concepts": ["game", "data science"],
+    "date": "August 2023",
+    "description": "An online game that allows users to connect to a room, then the host can start a game. The game will begin showing lyrics and the players have to guess the song. The game is built using React and SCSS for the frontend and Node.js for the backend. The game uses websockets to allow real-time communication between players.",
     "image": "/projects/lyric-game.png",
     "link": ""
   },
   "minecraft": {
     "name": "Minecraft",
     "technologies": ["C#", "Unity"],
-    "tags": ["game", "3d"],
-    "description": "Minecraft-like voxel game implementation",
+    "concepts": ["game", "3d"],
+    "date": "August 2022",
+    "description": "This was a Minecraft clone I built in Unity. It was a project to learn about 3D graphics and game development. The project was built using C# and Unity for the graphics and user interface. The project is no longer functional as I lost the files, but it was a fun project to work on.",
     "image": "/projects/minecraft.png",
     "link": ""
   },
   "disease-sim": {
     "name": "Disease Simulation",
     "technologies": ["C#", "Unity"],
-    "tags": ["simulator", "pathfinding"],
-    "description": "Navigation and pathfinding simulation project",
+    "concepts": ["simulator", "pathfinding"],
+    "date": "January - March 2023",
+    "description": "A disease simulation project I worked on for my NEA (A Level Computer Science). The project involved simulating a small society and their movements. I developed schools, work places and parks for different types of people to head to at certain times. Via these peoples movements, diseases spread. I also implemented counter disease measures to see their effects such as Lockdown and masks. The project was built using C# and Unity for the graphics and user interface.",
     "image": "/projects/disease-sim.png",
     "link": ""
   },
   "bartender": {
     "name": "The Bartender",
     "technologies": ["Flutter", "PostgreSQL"],
-    "tags": ["sql"],
-    "description": "Drink recipe and inventory management application",
+    "concepts": ["sql"],
+    "date": "February 2024",
+    "description": "An app that a user can input their ingredients and it will show the cocktails that can be made with those ingredients. The app is built using Flutter for the frontend and PostgreSQL for the database. The app allows users to search for cocktails by ingredients",
     "image": "/projects/the_bartender.png",
     "link": ""
   },
   "raytracer": {
     "name": "OCAML Raytracer",
     "technologies": ["OCAML"],
-    "tags": ["simulator", "algorithms"],
-    "description": "Simulation system implemented in OCAML",
+    "concepts": ["simulator", "algorithms"],
+    "date": "December 2023",
+    "description": "This was a raytracer I built in OCAML. It was a project to learn about raytracing and 3D graphics. The project was built using OCAML for the graphics and user interface. The project also involved a basic physics engine to demonstrate the raytracing principles.",
     "image": "/projects/raytracer.png",
     "link": ""
   },
@@ -129,9 +143,28 @@
       "Supabase",
       "Open AI"
     ],
-    "tags": ["ai"],
-    "description": "",
+    "concepts": ["ai", "website"],
+    "date": "April 2025",
+    "description": "A SAAS to help users plan meals. A user can describe any meal they want and the AI will generate an ingredients list from them. All the users ingredients are compiled into a single list for their convenience. The app is built using Next.js and Tailwind CSS for the frontend and Supabase for the database. The app uses Open AI to generate the ingredients list from the users description.",
     "image": "/projects/trophora.png",
     "link": "trophora.com"
+  },
+  "drone-software": {
+    "name": "Drone Software",
+    "technologies": ["C++"],
+    "concepts": ["pathfinding"],
+    "date": "December 2024",
+    "description": "This is the first half of me making a drone, that can scan a building with no assistance and create a 3D model of it. The software can store points efficiently and pathfind to missing points. The software is built using just C++.",
+    "image": "/projects/drone-simulator.png",
+    "link": ""
+  },
+  "kintus": {
+    "name": "KintusCloud",
+    "technologies": ["React", "Django", "PostgreSQL"],
+    "concepts": ["website", "sql"],
+    "date": "July - August 2024",
+    "description": "KintusCloud is a full stack website I built to understand backend and databases to a fuller extent. It allowed users to write articles and share them with others. Users could make accounts and payments.",
+    "image": "/projects/KintusCloudLogo.png",
+    "link": ""
   }
 }

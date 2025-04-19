@@ -4,6 +4,7 @@ import AnimatedLogoCloud from "@/components/ui/AnimatedLogoCloud";
 import projects from "../projects.json";
 import { use } from "react";
 import { SquareChevronRight } from "lucide-react";
+import Image from "next/image";
 
 type ProjectKey = keyof typeof projects;
 
@@ -22,8 +23,8 @@ export default function ProjectPage({
       <div className="w-auto text-center mt-20">
         <h1 className="text-lg font-semibold">Project Page</h1>
         <p>
-          I haven't build <span className="font-bold">{project[0]}</span> yet,
-          maybe come back next week
+          I haven&#39;t build <span className="font-bold">{project[0]}</span>{" "}
+          yet, maybe come back next week
         </p>
       </div>
     );
@@ -31,17 +32,23 @@ export default function ProjectPage({
   const project_details = projects[project[0] as ProjectKey];
 
   return (
-    <div className="md:w-1/2 mx-auto mt-20 space-y-8">
-      <div className="flex items-center space-y-5.5 md:space-y-0 md:items-end justify-between text-base md:flex-row flex-col">
+    <div className="md:w-1/2 mx-auto mt-20">
+      <div className="flex items-center space-y-5.5 md:space-y-0 md:items-end justify-between text-base md:flex-row flex-col mb-3">
         <h1 className="text-5xl font-semibold">{project_details.name}</h1>
 
         {project_details.image && (
-          <img
+          <Image
+            width={600}
+            height={600}
             src={project_details.image}
             alt={project_details.name}
             className="w-96 rounded-lg shadow-lg"
           />
         )}
+      </div>
+
+      <div className="w-11/12 text-sm text-gray-500 mb-4 ml-1">
+        <p>{project_details.date}</p>
       </div>
 
       <div className="text-lg text-gray-700 leading-relaxed">
