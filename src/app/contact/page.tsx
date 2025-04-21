@@ -5,7 +5,7 @@ import { toast } from "sonner";
 export default function ContactPage() {
   const copyEmail = () => {
     navigator.clipboard
-      .writeText("greenwoodxe@gmail.com")
+      .writeText("mail@ogwood.dev")
       .then(() => {
         toast("Email copied to clipboard!");
       })
@@ -19,7 +19,7 @@ export default function ContactPage() {
       <div>
         <div onClick={copyEmail}>
           <p className="hover:underline cursor-pointer text-xl font-['Times_New_Roman']">
-            greenwoodxe@gmail.com
+            mail@ogwood.dev
           </p>
         </div>
         <div className="flex justify-center mt-4 items-center gap-4">

@@ -21,7 +21,7 @@ export default function Home() {
             duration={40}
             className="text-6xl font-bold min-h-10"
           >
-            Greenwood
+            Oliver Greenwood
           </TypingAnimation>
         </div>
         <p className="text-xl opacity-0 animate-fade-in-up animation-delay-1000">
