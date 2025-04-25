@@ -251,7 +251,7 @@ export default function ProjectsPage() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-card rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+                className="bg-card rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 relative"
               >
                 <div className="aspect-video relative">
                   <Image
@@ -308,9 +308,11 @@ export default function ProjectsPage() {
                       </span>
                     ))}
                   </div>
+                  <div className="h-9" />
                   <motion.div
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
+                    className="absolute bottom-4 right-4"
                   >
                     <Link
                       href={`projects/${key}`}
