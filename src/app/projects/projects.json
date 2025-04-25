@@ -134,15 +134,7 @@
   },
   "trophora": {
     "name": "Trophora",
-    "technologies": [
-      "JavaScript",
-      "HTML5",
-      "CSS3",
-      "Next.js",
-      "Tailwind CSS",
-      "Supabase",
-      "Open AI"
-    ],
+    "technologies": ["Next.js", "Tailwind CSS", "Supabase"],
     "concepts": ["ai", "website"],
     "date": "April 2025",
     "description": "A SAAS to help users plan meals. A user can describe any meal they want and the AI will generate an ingredients list from them. All the users ingredients are compiled into a single list for their convenience. The app is built using Next.js and Tailwind CSS for the frontend and Supabase for the database. The app uses Open AI to generate the ingredients list from the users description.",
