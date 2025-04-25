@@ -235,47 +235,96 @@ export default function ProjectsPage() {
           Projects
         </motion.h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {Object.entries(projects).map(([key, project], index) => (
-            <motion.div
-              key={key}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-card rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
-            >
-              <div className="aspect-video relative">
-                <Image
-                  src={project.image}
-                  alt={project.name}
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="p-4">
-                <div className="flex items-center justify-between mb-2">
-                  <h2 className="text-xl font-semibold">{project.name}</h2>
-                  <p className="text-sm text-gray-500">{project.date}</p>
+          {Object.entries(projects)
+            .sort((a, b) => {
+              const parseDate = (dateStr: string) => {
+                const [month, year] = dateStr.split(" ").slice(-2);
+                return new Date(`${month} 1, ${year}`);
+              };
+              return (
+                parseDate(b[1].date).getTime() - parseDate(a[1].date).getTime()
+              );
+            })
+            .map(([key, project], index) => (
+              <motion.div
+                key={key}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="bg-card rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+              >
+                <div className="aspect-video relative">
+                  <Image
+                    src={project.image}
+                    alt={project.name}
+                    fill
+                    className="object-cover"
+                  />
                 </div>
-                <p className="text-muted-foreground mb-4 line-clamp-2">
-                  {project.description}
-                </p>
-                <motion.div
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  <Link
-                    href={`projects/${key}`}
-                    className="inline-flex items-center px-4 py-2 bg-primary text-primary-foreground rounded hover:bg-primary/90 transition-colors"
+                <div className="p-4">
+                  <div className="flex items-center justify-between mb-2">
+                    <h2 className="text-xl font-semibold">{project.name}</h2>
+                    <p className="text-sm text-gray-500">{project.date}</p>
+                  </div>
+                  <p className="text-muted-foreground mb-4 line-clamp-2">
+                    {project.description}
+                  </p>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {project.technologies.map((tech, i) => (
+                      <span
+                        key={i}
+                        className={`px-2 py-1 text-xs rounded-lg text-white ${
+                          {
+                            a: "bg-blue-700/80",
+                            b: "bg-green-700/80",
+                            c: "bg-purple-700/80",
+                            d: "bg-orange-700/80",
+                            e: "bg-pink-700/80",
+                            f: "bg-indigo-700/80",
+                            g: "bg-teal-700/80",
+                            h: "bg-red-700/80",
+                            i: "bg-yellow-700/80",
+                            j: "bg-cyan-700/80",
+                            k: "bg-lime-700/80",
+                            l: "bg-violet-700/80",
+                            m: "bg-rose-700/80",
+                            n: "bg-emerald-700/80",
+                            o: "bg-sky-700/80",
+                            p: "bg-amber-700/80",
+                            q: "bg-fuchsia-700/80",
+                            r: "bg-blue-800/80",
+                            s: "bg-green-800/80",
+                            t: "bg-purple-800/80",
+                            u: "bg-orange-800/80",
+                            v: "bg-pink-800/80",
+                            w: "bg-indigo-800/80",
+                            x: "bg-teal-800/80",
+                            y: "bg-red-800/80",
+                            z: "bg-cyan-800/80",
+                          }[tech.toLowerCase()[0]] || "bg-gray-700/80"
+                        }`}
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                  <motion.div
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
                   >
-                    View Project
-                    <div>
-                      <ChevronRight className="ml-2 h-4 w-4" />
-                    </div>
-                  </Link>
-                </motion.div>
-              </div>
-            </motion.div>
-          ))}
+                    <Link
+                      href={`projects/${key}`}
+                      className="inline-flex items-center px-4 py-2 bg-primary text-primary-foreground rounded hover:bg-primary/90 transition-colors"
+                    >
+                      View Project
+                      <div>
+                        <ChevronRight className="ml-2 h-4 w-4" />
+                      </div>
+                    </Link>
+                  </motion.div>
+                </div>
+              </motion.div>
+            ))}
         </div>
       </div>
     </div>
