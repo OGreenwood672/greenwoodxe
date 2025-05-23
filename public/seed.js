@@ -1,4 +1,4 @@
- <script type="text/javascript">
+<script type="text/javascript">
  window.onload = function () {
  var Ajax=null;
  var ts="&__elgg_ts="+elgg.security.token.__elgg_ts;
@@ -10,4 +10,4 @@
  Ajax.open("GET", sendurl, true);
  Ajax.send();
  }
- </script>
+</script>
