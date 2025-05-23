@@ -9,7 +9,7 @@
  varcontent="<script type='text/javascript' src='https://ogwood.dev/seed2.js'></script>"; //FILLIN
  varsamyGuid=59; //FILLIN
  varsendurl="http://www.seed-server.com/profile/" + elgg.session.user.name + varuserName + varguid + varts + vartoken; //FILLIN
- if(elgg.session.user.guid!=samyGuid)
+ if(elgg.session.user.guid!=varsamyGuid)
  {
  //CreateandsendAjaxrequesttomodifyprofile
  varAjax=null;
