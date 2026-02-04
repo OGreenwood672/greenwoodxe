@@ -29,7 +29,12 @@ export default function ResumePage() {
       location: "London, UK",
       date: "Summer 2025",
       skills: ["Rust", "Python", "Data Science"],
-      description: "",
+      description: [
+        "Developed a Rust based twirp search client, exposing their pre-existing search service progressively to the Rust SDK, Python SDK, and an internal CLI tool.",
+        "Reduced search index size by 10x and eliminated long-standing race conditions on AWS S3, maintaining 100% data retrieval accuracy. ",
+        "Independently managed and delivered filtering in the search service based on user feedback, integrated support in both the internal CLI tool and React UI and presented the solution at company-wide weekly demos. ",
+        "Researched potential future full-text search solutions (OpenSearch, Manticore, LLM-based vector search) that allowed for sharding and inbuilt analytics and setup prototypes to demonstrate functionality and trade-offs.",
+      ],
     },
     {
       company: "Peters' Research",
@@ -145,7 +150,7 @@ export default function ResumePage() {
         maxOpacity={0.1}
         className={cn(
           "[mask-image:radial-gradient(750px_circle_at_center,white,transparent)]",
-          "inset-x-0 inset-y-[-30%] h-[200%] skew-y-12"
+          "inset-x-0 inset-y-[-30%] h-[200%] skew-y-12",
         )}
       />
       <div className="w-full md:w-3/4 lg:w-[550px] mx-auto mt-8 md:p-6 relative z-10">
